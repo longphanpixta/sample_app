@@ -1,0 +1,11 @@
+en:
+  hello: "Hello world"
+  title: "Ruby on Rails Tutorial Sample App"
+  app: "Sample app"
+  home: "Home"
+  help: "Help"
+  login: "Log in"
+  about: "About"
+  contract: "Contract"
+  signup: "Sign up now!"
+

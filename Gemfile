@@ -24,6 +24,8 @@ gem 'bootstrap-sass', '3.4.1'
 
 gem 'sassc-rails', '2.1.2'
 
+gem 'bcrypt', '3.1.20'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows]

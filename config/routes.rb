@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  get 'users/new'
   root 'static_pages#home'
   get '/help', to: 'static_pages#help', as: 'help'
   get '/about', to: 'static_pages#about'
   get '/contract', to: 'static_pages#contract'
   get '/signup', to: 'users#new'
+
+  resources :users
 end

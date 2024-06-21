@@ -2,3 +2,6 @@ en:
   users:
     new:
       intro: "This will be a signup page for new users."
+
+    create:
+      success: "Welcome to the Sample App!"

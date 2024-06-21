@@ -1,5 +1,4 @@
 en:
   users:
     new:
-      intro:  "This will be a signup page for new users."
-
+      intro: "This will be a signup page for new users."

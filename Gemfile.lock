@@ -82,6 +82,7 @@ GEM
       execjs (~> 2)
     backport (1.2.0)
     base64 (0.2.0)
+    bcrypt (3.1.20)
     benchmark (0.3.0)
     bigdecimal (3.1.8)
     bindex (0.8.1)
@@ -318,6 +319,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt (= 3.1.20)
   bootsnap (= 1.18.3)
   bootstrap-sass (= 3.4.1)
   capybara

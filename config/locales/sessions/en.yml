@@ -1,0 +1,4 @@
+en:
+  sessions:
+    create:
+      invalid_user: "Invalid email/password combination"

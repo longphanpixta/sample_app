@@ -8,4 +8,8 @@ en:
   about: "About"
   contract: "Contract"
   signup: "Sign up now!"
-
+  user: "User"
+  account: "Account"
+  profile: "Profile"
+  settings: "Settings"
+  logout: "Logout"

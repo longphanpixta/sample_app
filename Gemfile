@@ -8,7 +8,7 @@ gem 'sprockets-rails', '3.5.1'
 
 gem 'sqlite3', '1.7.3'
 
-gem 'puma', '5.0'
+gem 'puma', '6.0'
 
 gem 'importmap-rails', '2.0.1'
 

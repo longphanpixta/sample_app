@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
 
     if user&.authenticate(login_params[:password])
       reset_session
+      login_params[:remember_me] == Settings.global.checkbox_true ? remember(user) : forget(user)
       login user
       redirect_to user
 
@@ -17,7 +18,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    logout
+    logout if logged_in?
     redirect_to root_url, status: :see_other
   end
 end

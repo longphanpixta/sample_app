@@ -8,7 +8,7 @@ gem 'sprockets-rails', '3.5.1'
 
 gem 'sqlite3', '1.7.3'
 
-gem 'puma', '5.0'
+gem 'puma', '6.0'
 
 gem 'importmap-rails', '2.0.1'
 
@@ -25,6 +25,8 @@ gem 'bootstrap-sass', '3.4.1'
 gem 'sassc-rails', '2.1.2'
 
 gem 'bcrypt', '3.1.20'
+
+gem 'config', '5.5.1'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

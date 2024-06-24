@@ -2,3 +2,4 @@ en:
   sessions:
     create:
       invalid_user: "Invalid email/password combination"
+      remember_me: "Remember me on this computer"

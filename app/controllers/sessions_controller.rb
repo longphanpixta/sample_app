@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 
     if user&.authenticate(login_params[:password])
       reset_session
-      login_params[:remember_me] == REMEMBER_ME_TRUE ? remember(user) : forget(user)
+      login_params[:remember_me] == Settings.global.checkbox_true ? remember(user) : forget(user)
       login user
       redirect_to user
 

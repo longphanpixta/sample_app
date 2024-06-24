@@ -3,12 +3,12 @@ class User < ApplicationRecord
 
   before_save { self.email = email.downcase }
 
-  validates :name,  presence: true, length: { maximum: MAXIMUM_USER_NAME_LENGTH }
-  validates :email, presence: true, length: { maximum: MAXIMUM_USER_EMAIL_LENGTH },
-                    format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
+  validates :name,  presence: true, length: { maximum: Settings.user.maxium_name_length }
+  validates :email, presence: true, length: { maximum: Settings.user.maxium_email_length },
+                    format: { with: /#{Settings.global.email_regex}/i }, uniqueness: { case_sensitive: false }
 
   has_secure_password
-  validates :password, presence: true, length: { minimum: 6 }
+  validates :password, presence: true, length: { minimum: Settings.user.minium_password_length }
 
   def self.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost

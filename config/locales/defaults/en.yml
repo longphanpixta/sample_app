@@ -13,3 +13,6 @@ en:
   profile: "Profile"
   settings: "Settings"
   logout: "Logout"
+  save_changes: "Save changes"
+  confirmation: "Confirmation"
+  change: "Change"

@@ -1,7 +1,24 @@
 en:
   users:
+    index:
+      all_users: "All users"
+      ask_confirmation: "You sure?"
+
     new:
       intro: "This will be a signup page for new users."
+      create_account: "Create account"
 
     create:
       success: "Welcome to the Sample App!"
+
+    edit:
+      edit_user: "Edit user"
+      update_profile: "Update your profile"
+
+    update:
+      success: "Profile udpated"
+
+    destroy:
+      success: "User deleted"
+
+    please_login: "Please login"

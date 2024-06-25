@@ -6,10 +6,11 @@ class SessionsController < ApplicationController
     user = User.find_by email: login_params[:email]
 
     if user&.authenticate(login_params[:password])
+      forwarding_url = session[:forwarding_url]
       reset_session
       login_params[:remember_me] == Settings.global.checkbox_true ? remember(user) : forget(user)
       login user
-      redirect_to user
+      redirect_to forwarding_url || user
 
     else
       flash[:danger] = t('.invalid_user')
